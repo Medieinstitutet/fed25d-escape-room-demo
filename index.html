@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>escape-room</title>
+  </head>
+  <body>
+    <header>
+      <h1>Vårt spel</h1>
+      <button id="start-game">Starta spelet</button>
+    </header>
+
+    <main>
+      <!-- ***************************************-->
+      <!-- *************** ROOM 1 *************** -->
+      <!-- ***************************************-->
+      <section id="room1" class="room1 hidden">
+        <h2>Rum 1</h2>
+        <button id="room1-complete">Färdig!</button>
+      </section>
+
+      <!-- ***************************************-->
+      <!-- *************** ROOM 2 *************** -->
+      <!-- ***************************************-->
+      <section id="room2" class="room2 hidden">
+        <h2>Rum 2</h2>
+        <button id="room2-complete">Färdig!</button>
+      </section>
+
+      <!-- ***************************************-->
+      <!-- *************** GAME OVER ************ -->
+      <!-- ***************************************-->
+      <section id="game-over" class="game-over hidden">
+        <h2>Game over!</h2>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
