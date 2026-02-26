@@ -8,6 +8,12 @@ const room1Container: HTMLDivElement | null = document.querySelector('#room1');
  * event listeners for buttons, etc. and display the room.
  */
 export function initRoom1() {
+  if (!room1Container) {
+    console.error('Room 1 HTML container missing. Canceling.');
+
+    return;
+  }
+
   console.log('Room 1 initialized');
 
   if (room1Container) {
